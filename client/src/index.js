@@ -5,7 +5,7 @@ import App from "./App";
 import store from "./store/configStore";
 import { loadUser } from "./actions/auth";
 import "react-datepicker/dist/react-datepicker.css";
-import "./scss/main.scss";
+import "./styles/main.scss";
 
 store.dispatch(loadUser());
 
