@@ -1,11 +1,6 @@
 module.exports = {
-  mongoURI: "mongodb://localhost:27017/advenTours",
-  secret: "wuerhtia98asdliajsoiaewr98qt409y8qkj",
-  stripeSecretKey: "setuponheroku",
-  ticketMasterKey: "LnbqQAR4NORT7UGt33PPGoGZ7ELpQGaU"
+  mongoURI: process.env.MONGO_URI,
+  secret: process.env.JWT_SECRET,
+  stripeSecretKey: process.env.STRIPE_SECRET_KEY,
+  ticketMasterKey: process.env.TM_API_KEY
 };
-
-/*
-  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-
-*/
