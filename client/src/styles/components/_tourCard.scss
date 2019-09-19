@@ -36,7 +36,7 @@
   // Front side styling
   &__picture {
     background-size: cover;
-    background-position: right;
+    background-position: center right;
     height: 15rem;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -63,7 +63,7 @@
 
       li {
         text-align: center;
-        padding: 0.5em;
+        padding: 0.5em 0;
 
         &:not(:last-child) {
           border-bottom: 1px solid $grey-light;
@@ -142,7 +142,7 @@
     }
 
     &__details {
-      padding: 1rem 3rem;
+      padding: 1rem 0;
 
       & li {
         border-bottom: 1px solid $grey-light;

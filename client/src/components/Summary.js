@@ -7,26 +7,38 @@ import { registerUser, loginUser } from "../actions/auth";
 const Summary = ({ onClick, tour, registerUser, loginUser }) => {
   return (
     <div className="login">
-      <div className="u-center-text u-margin-bottom-sm">
+      <div className="u-center-text u-margin-bottom-xs">
         <h3 className="heading-tertiary">Summary</h3>
       </div>
-      <div className="login__order-summary u-margin-bottom-sm">
-        <p className="login__order-summary__item">
-          Tour: <span>{tour.title}</span>
-        </p>
-        <p className="login__order-summary__item">
-          From : <span>{moment(tour.startDate).format("Do MMM YYYY")}</span>
-        </p>
-        <p className="login__order-summary__item">
-          Until: <span>{moment(tour.endDate).format("Do MMM YYYY")}</span>
-        </p>
-        <p className="login__order-summary__item">
-          Price: <span>£{tour.price}.00</span>
-        </p>
+      <div className="login__order-summary">
+        <div className="login__order-summary__item">
+          <p className="login__order-summary__item--constant">Tour: </p>
+          <p className="login__order-summary__item--variable">{tour.title}</p>
+        </div>
+
+        <div className="login__order-summary__item">
+          <p className="login__order-summary__item--constant">From : </p>
+          <p className="login__order-summary__item--variable">
+            {moment(tour.startDate).format("Do MMM YYYY")}
+          </p>
+        </div>
+
+        <div className="login__order-summary__item">
+          <p className="login__order-summary__item--constant">Until: </p>
+          <p className="login__order-summary__item--variable">
+            {moment(tour.endDate).format("Do MMM YYYY")}
+          </p>
+        </div>
+
+        <div className="login__order-summary__item">
+          <p className="login__order-summary__item--constant">Price: </p>
+          <p className="login__order-summary__item--variable">
+            £{tour.price}.00
+          </p>
+        </div>
       </div>
       <p className="login__info u-margin-bottom-sm">
-        To book your tour, please either sign in to your account or register if
-        you are a new customer
+        To book your tour, please sign in or register if you are a new customer
       </p>
       <div className="login__links ">
         <Link to="/signin" onClick={onClick} className="login__links__button">

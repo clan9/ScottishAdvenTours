@@ -1,8 +1,8 @@
 .tours {
   display: grid;
   grid-template-rows: repeat(2, minmax(30vh, min-content));
-  grid-template-columns: repeat(auto-fit, minmax(14.5em, 1fr));
-  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  grid-gap: 1.2em;
   grid-auto-rows: minmax(30vh, min-content);
   // background-color: $grey-light;
   padding-bottom: 3em;

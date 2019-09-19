@@ -44,10 +44,8 @@ const ReviewLogin = ({
   };
 
   return (
-    <div className="u-container">
-      <h2 className="heading-secondary u-center-text">
-        Please sign in to add your review
-      </h2>
+    <div className="">
+      <h2 className="heading-secondary u-center-text">Sign in</h2>
       <form className="form" onSubmit={onSubmit}>
         <div className="form__error__container form__error__container--review ">
           {formError && <p className="form__error__msg">{formError}</p>}
