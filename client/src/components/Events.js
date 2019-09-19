@@ -9,6 +9,8 @@ const Events = ({ getEvents, events, loading }) => {
     window.scrollTo(0, 0);
   }, []);
 
+  document.body.style.overflow = "visible";
+
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
@@ -120,22 +122,3 @@ export default connect(
   mapStateToProps,
   { getEvents }
 )(Events);
-
-// const locale = "en-gb";
-// const marketId = 207;
-// const sort = "date,asc";
-
-// const reqObj = {
-//   API_KEY,
-//   locale,
-//   marketId,
-//   startDateTime,
-//   endDateTime,
-//   sort
-// };
-
-//  const API_KEY = process.env.REACT_APP_TM_API_KEY;
-
-// const URL = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${API_KEY}&locale=en-gb&marketId=207&startDateTime=${formatDateTime(
-//     startDate
-//   )}&endDatetime=${formatDateTime(endDate)}&sort=date,asc`;

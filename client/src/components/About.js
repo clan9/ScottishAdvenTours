@@ -6,6 +6,8 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  document.body.style.overflow = "visible";
+
   return (
     <div className="section-about">
       <div className="u-container">

@@ -9,6 +9,8 @@ const TourList = ({ tours, fetchTours }) => {
     fetchTours();
   }, [fetchTours]);
 
+  document.body.style.overflow = "visible";
+
   return (
     <div className="section-tours">
       <div className="u-container">
