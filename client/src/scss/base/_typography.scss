@@ -1,0 +1,80 @@
+body {
+  background-color: $grey-body;
+  color: $grey-dark;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: $grey-light;
+  text-align: center;
+
+  &--main {
+    animation: fadeIn 4s ease-out 1s;
+    animation-fill-mode: backwards;
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    margin-bottom: 1em;
+  }
+
+  &--sub {
+    animation: fadeIn 4s ease-out 3s;
+    animation-fill-mode: backwards;
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-top: 1.5em;
+  background-image: linear-gradient(to right, $blue, $teal);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  &-text {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  .heading-secondary {
+    margin-left: 1em;
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 400;
+  background-image: linear-gradient(to right, $blue, $teal);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  background-image: linear-gradient(to right bottom, $teal, $blue);
+  backface-visibility: hidden;
+  border: none;
+  box-shadow: 0 6px 8px rgba($black, 0.4);
+  color: $white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 16px rgba($black, 0.4);
+  }
+}

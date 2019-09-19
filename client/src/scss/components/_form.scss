@@ -1,0 +1,66 @@
+.form {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // height: 60vh;
+
+  .form__error__container {
+    // background-color: yellow;
+    height: 50px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    // padding: 1em 0;
+  }
+
+  .form__error__container--review {
+    // background-color: yellow;
+    height: 50px;
+    margin: 0.5em 0;
+  }
+
+  .form__error__msg {
+    color: orangered;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    animation: fadeInErrMsg 6.5s ease-out backwards;
+  }
+
+  .form__field {
+    color: inherit;
+    font: inherit;
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+    padding: 0.5em;
+  }
+
+  .form__textarea {
+    color: inherit;
+    height: 50vh;
+    font: inherit;
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+
+  .form__button__container {
+    text-align: center;
+  }
+
+  .form__button {
+    background-color: $teal;
+    border: none;
+    border-radius: 3px;
+    color: $white;
+    font: inherit;
+    font-size: 1.4rem;
+    outline: none;
+    padding: 0.5em 1em;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}

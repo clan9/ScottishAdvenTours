@@ -1,0 +1,23 @@
+.gallery {
+  border-radius: 3px;
+  padding: 0.5em 1em;
+
+  &__image {
+    border-radius: 3px;
+    padding: 0.5em;
+    width: 100%;
+  }
+}
+
+// Gallery animation
+@keyframes gallery {
+  0% {
+    opacity: 0;
+    // transform: scale(0.4);
+  }
+
+  100% {
+    opacity: 1;
+    // transform: scale(1);
+  }
+}

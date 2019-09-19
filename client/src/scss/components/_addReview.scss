@@ -1,0 +1,47 @@
+.review__options {
+  &__text__container {
+    height: 50px;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+
+    &--no-tours {
+      padding-top: 3em;
+      text-align: center;
+      font-size: 1.6rem;
+      font-style: initial;
+      font-weight: 300;
+      color: orangered;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+
+    &__button {
+      background-color: $teal;
+      border: none;
+      color: $white;
+      font: inherit;
+      margin-right: 0.5em;
+      outline: none;
+      padding: 0.2em 0.5em;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: darken($color: $teal, $amount: 5%);
+      }
+    }
+  }
+}
+
+.addReview__error__msg {
+  color: orangered;
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: center;
+  animation: fadeInErrMsg 6.5s ease-out backwards;
+}

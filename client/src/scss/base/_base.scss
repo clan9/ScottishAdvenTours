@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+  // define what 1rem is:
+  font-size: calc(1vw + 0.4em);
+}
+
+@media (min-width: 75em) {
+  // 75em = 1200px so 1vw = 12px
+  // 12px + 6.4px (from 0.4em) = 18.4px -> 18.4/16px = 1.15em
+  :root {
+    font-size: 1.15em;
+  }
+}
+
+@media (max-width: 37.5em) {
+  // 37.5em = 600px so 1vw = 6px
+  // 6px + 6.4px (from 0.4em) = 12.4px -> 12.4/16px = .775em
+  :root {
+    font-size: 0.775em;
+  }
+}

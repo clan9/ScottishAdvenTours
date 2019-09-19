@@ -1,0 +1,85 @@
+.tour-details {
+  backface-visibility: hidden;
+
+  &__showcase {
+    border-radius: 3px;
+
+    &__gallery {
+      padding: 0 2em;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 2em;
+
+      &__item {
+        // background-color: rgba(25, 128, 128, 0.151);
+        background-color: rgba(57, 119, 119, 0.158);
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba($black, 0.6);
+        margin: 1em 0;
+        padding: 0.75em;
+
+        display: flex;
+        align-items: center;
+
+        &--content {
+          margin-left: 1.5em;
+        }
+      }
+    }
+  }
+
+  &__duration {
+    &__heading {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 2em;
+      text-align: center;
+
+      & span {
+        color: $blue;
+        font-size: 2.2rem;
+        font-weight: 300;
+      }
+    }
+
+    &__text {
+      margin-bottom: 1.5em;
+
+      & span {
+        color: $blue;
+      }
+    }
+
+    &__dates {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  &__book {
+    margin-top: 3.5em;
+    text-align: center;
+
+    &__modal {
+      background-image: linear-gradient(to right bottom, $teal, $blue);
+      backface-visibility: hidden;
+      border: none;
+      box-shadow: 0 6px 8px rgba($black, 0.4);
+      color: $white;
+      font-family: inherit;
+      font-size: 1.4rem;
+      outline: none;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 12px 16px rgba($black, 0.4);
+      }
+    }
+  }
+}

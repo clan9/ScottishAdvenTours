@@ -1,0 +1,21 @@
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($blue, 0.2),
+      rgba($dark-blue, 0.2)
+    ),
+    url("/img/hero.jpg");
+  background-blend-mode: luminosity;
+  background-position: top;
+  background-size: cover;
+  backface-visibility: hidden;
+
+  &__text-box {
+    padding: 1em 1.5em;
+  }
+}

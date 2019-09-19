@@ -1,0 +1,75 @@
+.checkout {
+  margin: 0 auto;
+  width: 60%;
+
+  & h3 {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__info {
+    background-color: rgba(71, 61, 139, 0.541);
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba($black, 0.3);
+    color: $grey-light;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      padding: 0.5em;
+      text-align: center;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__info__confirmation {
+    margin-bottom: 2em;
+
+    &__testInfo {
+      color: orangered;
+    }
+  }
+
+  &__payment {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#cardNumber {
+  background-color: rgba(71, 61, 139, 0.205);
+  color: $grey-light;
+  font: inherit;
+  padding: 1em;
+}
+
+#expiryDate {
+  background-color: rgba(71, 61, 139, 0.205);
+  color: $grey-light;
+  font: inherit;
+  padding: 1em;
+}
+
+#CVC {
+  background-color: rgba(71, 61, 139, 0.205);
+  color: $grey-light;
+  font: inherit;
+  padding: 1em;
+}
+
+#CardButton {
+  background-color: rgba(71, 61, 139, 0.603);
+  color: $grey-light;
+  font: inherit;
+  padding: 1em;
+  margin-top: 1em;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: rgba(71, 61, 139, 0.829);
+  }
+}
