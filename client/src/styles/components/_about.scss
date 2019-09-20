@@ -79,21 +79,21 @@
       }
     }
     &--1 {
-      background-image: linear-gradient(rgba($black, 0.45), rgba($black, 0.45)),
+      background-image: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)),
         url("/img/aboutCard1.jpg");
       background-size: cover;
       background-position: bottom;
     }
 
     &--2 {
-      background-image: linear-gradient(rgba($black, 0.55), rgba($black, 0.55)),
+      background-image: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)),
         url("/img/aboutCard2.jpg");
       background-size: cover;
       background-position: bottom;
     }
 
     &--3 {
-      background-image: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)),
+      background-image: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)),
         url("/img/aboutCard3.jpg");
       background-size: cover;
       background-position: right;
