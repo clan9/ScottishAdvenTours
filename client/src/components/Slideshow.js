@@ -23,7 +23,7 @@ const Slideshow = ({ tourCode }) => {
     >
       <Gallery
         style={{
-          backgroundColor: "#3A909EA0",
+          backgroundColor: "#2f4f4fcc",
           borderRadius: "3px"
         }}
         index={index}
