@@ -1,7 +1,7 @@
 .tour-details {
   &__gallery {
-    width: 90%;
-    margin: 0 auto;
+    width: 85%;
+    margin: 0 auto 3rem auto;
   }
 
   &__list {
@@ -15,13 +15,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 3px;
     margin-top: 3em;
 
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-    // height: 100vmax;
     height: auto;
     width: 90%;
     margin: 0 auto;
@@ -40,6 +39,7 @@
       margin: 1em 0.5em;
 
       background-color: rgba($grey-light, 0.3);
+      border-radius: 3px;
       color: $white;
       box-shadow: 0 3px 6px rgba($black, 0.7);
       transition: all 0.4s;
@@ -107,6 +107,12 @@
   }
 }
 
+@media only screen and (max-width: 56.25em) {
+  .tour-details__gallery {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 43.75em), only screen and (hover: none) {
   .tour-details__list {
     flex-direction: column;
@@ -114,7 +120,6 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 1em 0;
-    // height: 120vmax;
 
     &__item {
       margin: 1em 0;
@@ -124,28 +129,15 @@
   }
 }
 
-// @media only screen and (max-width: 31.25em), only screen and (hover: none) {
-//   .tour-details__list {
-//     // height: 120vmax;
-//   }
-// }
-
-// @media only screen and (max-width: 20em), only screen and (hover: none) {
-//   .tour-details__list {
-//     // height: 130vmax;
-//   }
-// }
-
-@media only screen and (min-width: 56.25em) {
-  .tour-details__list {
-    height: 885px;
+@media only screen and (max-width: 37.5em) {
+  .tour-details__gallery {
+    width: 75%;
   }
 }
 
 @media only screen and (max-width: 26em), only screen and (hover: none) {
   .tour-details__gallery {
-    width: 85%;
-    margin: 0 auto;
+    width: 70%;
   }
   .tour-details__list {
     flex-direction: column;
@@ -153,12 +145,17 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 1em 0;
-    // height: 155vmax;
 
     &__item {
       margin: 1em 0;
       width: 80%;
       padding: 1em;
     }
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .tour-details__gallery {
+    width: 65%;
   }
 }

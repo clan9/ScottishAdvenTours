@@ -13,34 +13,39 @@ const Slideshow = ({ tourCode }) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <Gallery
+    <div
+      className="gallery__container"
       style={{
-        width: "90%",
+        position: "relative",
         height: "100%",
-        margin: "0 auto",
-        backgroundColor: "rgba(0,0,0,0.6)",
-        marginBottom: "3em"
+        width: "100%"
       }}
-      index={index}
-      onRequestChange={i => {
-        setIndex(i);
-      }}
-      enableIndicators={false}
     >
-      {images.map((image, index) => (
-        <GalleryImage
-          key={index}
-          src={image}
-          style={{
-            width: "90%",
-            height: "100%",
-            margin: "0 auto",
-            padding: "0.5em",
-            borderRadius: "6px"
-          }}
-        />
-      ))}
-    </Gallery>
+      <Gallery
+        style={{
+          backgroundColor: "#3A909EA0",
+          borderRadius: "3px"
+        }}
+        index={index}
+        onRequestChange={i => {
+          setIndex(i);
+        }}
+        enableIndicators={true}
+      >
+        {images.map((image, index) => (
+          <GalleryImage
+            key={index}
+            src={image}
+            style={{
+              width: "100%",
+              height: "100%",
+              padding: "0.5em",
+              borderRadius: "6px"
+            }}
+          />
+        ))}
+      </Gallery>
+    </div>
   );
 };
 
@@ -65,3 +70,37 @@ export default Slideshow;
     return () => clearInterval(timer);
   }, [index, images.length]);
  */
+
+// Before latest changes to try and get indicators contained
+
+/**
+  * 
+  * <Gallery
+        style={{
+          width: "90%",
+          height: "100%",
+          margin: "0 auto",
+          backgroundColor: "rgba(0,0,0,0.6)",
+          marginBottom: "3em"
+        }}
+        index={index}
+        onRequestChange={i => {
+          setIndex(i);
+        }}
+        enableIndicators={false}
+      >
+        {images.map((image, index) => (
+          <GalleryImage
+            key={index}
+            src={image}
+            style={{
+              width: "90%",
+              height: "100%",
+              margin: "0 auto",
+              padding: "0.5em",
+              borderRadius: "6px"
+            }}
+          />
+        ))}
+      </Gallery>
+  */
