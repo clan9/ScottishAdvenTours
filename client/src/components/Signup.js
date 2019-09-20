@@ -48,7 +48,7 @@ const Signup = ({ registerUser, history, isAuthenticated, serverErrorMsg }) => {
 
   return (
     <div className="u-container">
-      <h2 className="heading-secondary u-center-text">Register your account</h2>
+      <h2 className="form__heading u-center-text">Register your account</h2>
       <form className="form u-container" onSubmit={onSubmit}>
         <div className="form__error__container">
           {formError && <p className="form__error__msg">{formError}</p>}
