@@ -10,7 +10,7 @@ const Summary = ({ onClick, tour, registerUser, loginUser }) => {
       <div className="u-center-text u-margin-bottom-xs">
         <h3 className="heading-tertiary">Summary</h3>
       </div>
-      <div className="login__order-summary">
+      <div className="login__order-summary u-margin-bottom-xs">
         <div className="login__order-summary__item">
           <p className="login__order-summary__item--constant">Tour: </p>
           <p className="login__order-summary__item--variable">{tour.title}</p>
@@ -37,9 +37,7 @@ const Summary = ({ onClick, tour, registerUser, loginUser }) => {
           </p>
         </div>
       </div>
-      <p className="login__info u-margin-bottom-sm">
-        To book your tour, please sign in or register if you are a new customer
-      </p>
+
       <div className="login__links ">
         <Link to="/signin" onClick={onClick} className="login__links__button">
           Sign in
@@ -66,3 +64,10 @@ export default connect(
   mapStateToProps,
   { registerUser, loginUser }
 )(Summary);
+
+/**
+ * 
+ *  <p className="login__info u-margin-bottom-sm">
+        To book your tour, please sign in or register if you are a new customer
+      </p>
+ */
