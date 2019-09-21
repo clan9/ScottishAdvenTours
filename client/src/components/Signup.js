@@ -94,7 +94,7 @@ const Signup = ({ registerUser, history, isAuthenticated, serverErrorMsg }) => {
           onChange={e => setPassword2(e.target.value)}
         />
         <div className="form__button__container">
-          <button className="form__button">Submit</button>
+          <button className="btn">Submit</button>
         </div>
       </form>
     </div>

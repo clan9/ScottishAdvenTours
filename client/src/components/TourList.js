@@ -19,6 +19,7 @@ const TourList = ({ tours, fetchTours }) => {
             <span className="heading-secondary-text">Our Tours</span>
           </h2>
         </header>
+
         <div className="tours">
           {tours.map(tour => {
             return <TourCard key={tour.tourId} {...tour} />;

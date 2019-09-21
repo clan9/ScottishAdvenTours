@@ -62,7 +62,7 @@ const About = () => {
           </div>
         </div>
         <div className="section-about__button u-center-text">
-          <Link to="/tours" className="button-link">
+          <Link to="/tours" className="btn">
             Tours &rarr;
           </Link>
         </div>

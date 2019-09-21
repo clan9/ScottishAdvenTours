@@ -74,7 +74,7 @@ const ReviewLogin = ({
         />
 
         <div className="form__button__container">
-          <button className="form__button">Submit</button>
+          <button className="btn">Submit</button>
         </div>
       </form>
     </div>

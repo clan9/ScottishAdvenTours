@@ -10,7 +10,7 @@ const SummaryError = ({ onClick }) => {
         <p>Looks like you forgot to choose the dates for your tour</p>
       </div>
       <div className="login__links ">
-        <button onClick={onClick} className="login__links__button">
+        <button onClick={onClick} className="btn">
           Back
         </button>
       </div>

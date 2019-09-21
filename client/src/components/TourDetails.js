@@ -80,10 +80,7 @@ const TourDetails = ({
               </div>
             </div>
             <div className="tour-details__book">
-              <button
-                className="tour-details__book__modal u-margin-bottom-md"
-                onClick={toggleModal}
-              >
+              <button className="btn u-margin-bottom-md" onClick={toggleModal}>
                 Book Now!
               </button>
               {showModal && (

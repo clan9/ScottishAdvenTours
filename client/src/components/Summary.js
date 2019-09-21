@@ -39,16 +39,13 @@ const Summary = ({ onClick, tour, registerUser, loginUser }) => {
       </div>
 
       <div className="login__links ">
-        <Link to="/signin" onClick={onClick} className="login__links__button">
+        <Link to="/signin" onClick={onClick} className="btn">
           Sign in
         </Link>
-        <Link to="/register" onClick={onClick} className="login__links__button">
+        <Link to="/register" onClick={onClick} className="btn">
           Register
         </Link>
-        <button
-          onClick={onClick}
-          className="login__links__button login__links__button--back"
-        >
+        <button onClick={onClick} className="btn btn--back">
           Back
         </button>
       </div>

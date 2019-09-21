@@ -1,12 +1,10 @@
 .tours {
   display: grid;
   grid-template-rows: repeat(2, minmax(30vh, min-content));
-  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15em, 0.7fr));
   grid-gap: 1.2em;
   grid-auto-rows: minmax(30vh, min-content);
-  // background-color: $grey-light;
   padding-bottom: 3em;
   margin-left: 1.5em;
+  justify-content: center;
 }
-
-// breakpoint @ 800px ( ~ 50em ? )
