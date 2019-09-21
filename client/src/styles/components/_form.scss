@@ -8,7 +8,7 @@
   &__heading {
     font-size: 2.5rem;
     font-weight: 400;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     background-image: linear-gradient(to right, $blue, $teal);
     -webkit-background-clip: text;
     background-clip: text;
@@ -56,7 +56,7 @@
   }
 
   .form__button__container {
-    padding-top: 2em;
+    padding-top: 0.5em;
     text-align: center;
   }
 }
